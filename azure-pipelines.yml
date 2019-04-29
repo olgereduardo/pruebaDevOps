@@ -1,4 +1,25 @@
 # HTML
+- task: IISWebAppManagementOnMachineGroup@0
+  inputs:
+    IISDeploymentType: 'IISWebsite'
+    ActionIISWebsite: 'CreateOrUpdateWebsite'
+    WebsiteName: 'prueba'
+    WebsitePhysicalPath: '%SystemDrive%\inetpub\wwwroot'
+    WebsitePhysicalPathAuth: 'WebsiteUserPassThrough'
+    CreateOrUpdateAppPoolForWebsite: true
+    AppPoolNameForWebsite: 'asd'
+    DotNetVersionForWebsite: 'v4.0'
+    PipeLineModeForWebsite: 'Integrated'
+    AppPoolIdentityForWebsite: 'ApplicationPoolIdentity'
+    PhysicalPathForVD: '%SystemDrive%\inetpub\wwwroot'
+    PhysicalPathForApplication: '%SystemDrive%\inetpub\wwwroot'
+    DotNetVersionForApplication: 'v4.0'
+    PipeLineModeForApplication: 'Integrated'
+    AppPoolIdentityForApplication: 'ApplicationPoolIdentity'
+    DotNetVersion: 'v4.0'
+    PipeLineMode: 'Integrated'
+    AppPoolIdentity: 'ApplicationPoolIdentity'
+    AppCmdCommands: 'asd'
 # Archive your static HTML project and save it with the build record.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
